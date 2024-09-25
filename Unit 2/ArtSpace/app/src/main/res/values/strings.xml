@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Art Space</string>
+
+    <string name="guadalupe_title">Our Lady of Guadalupe</string>
+    <string name="guadalupe_artist">Saint Juan Diego</string>
+    <string name="guadalupe_year_publication">(1531)</string>
+
+    <string name="the_last_supper_title">The Last Supper</string>
+    <string name="the_last_supper_artist">Leonardo da Vinci</string>
+    <string name="the_last_supper_year_publication">(1495\-1498)</string>
+
+    <string name="the_transfiguration_title">The Transfiguration</string>
+    <string name="the_transfiguration_artist">Raffaello Sanzio da Urbino</string>
+    <string name="the_transfiguration_year_publication">(1516\-1520)</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+
+</resources>
