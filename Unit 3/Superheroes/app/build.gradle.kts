@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.raulespim.woof"
+    namespace = "com.raulespim.superheroes"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.raulespim.woof"
+        applicationId = "com.raulespim.superheroes"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
@@ -59,7 +59,6 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation(libs.androidx.material.icons.extended)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
