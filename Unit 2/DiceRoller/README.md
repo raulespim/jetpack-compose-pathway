@@ -11,3 +11,7 @@
 
 ### What you'll build
 An interactive Android app called Dice Roller that lets users roll a dice and shows them the result of the roll.
+
+
+### Update
+This project contains an additional update for Build Variants / Build Types / Flavours learning.

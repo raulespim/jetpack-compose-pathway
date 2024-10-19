@@ -21,8 +21,19 @@ android {
     }
 
     buildTypes {
-        release {
+        debug {
+            isDebuggable = true
             isMinifyEnabled = false
+            isShrinkResources = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+        release {
+            isDebuggable = false
+            isMinifyEnabled = false
+            isShrinkResources = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -38,6 +49,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
@@ -45,6 +57,22 @@ android {
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
+    }
+
+    flavorDimensions.add("app_type")
+    productFlavors {
+        create("demo") {
+            dimension = "app_type"
+            applicationIdSuffix = ".demo"
+            versionNameSuffix = "-demo"
+            resValue("string", "app_name", "VariantFlavor DEMO")
+        }
+        create("full") {
+            dimension = "app_type"
+            applicationIdSuffix = ".full"
+            versionNameSuffix = "-full"
+            resValue("string", "app_name", "VariantFlavor FULL")
         }
     }
 }
